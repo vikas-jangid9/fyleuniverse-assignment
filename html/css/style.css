@@ -1,0 +1,252 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Adjusted to align items at the top */
+}
+
+.page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.text-content1, .text-content2 {
+    max-width: 50%;
+}
+
+.text-content1 h2, .header h2 {
+    color: #ff3366;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.text-content1 h1, .header h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.text-content1 p, .header p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ff3366;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.image-content img {
+    border-radius: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.right {
+    text-align: right;
+    width: 50%;
+}
+
+.services {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s;
+}
+
+.card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card-content .read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #ff3366;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:hover img {
+    opacity: 0;
+}
+
+.card:hover .card-content {
+    opacity: 1;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #ff3366;
+}
+
+.contact-page {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-page form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-page label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-page input, .contact-page textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-page button {
+    padding: 10px 20px;
+    background-color: #ff3366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-page button:hover {
+    background-color: #ff6699;
+}
+.name-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"], input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #ccc; /* Underline style */
+    padding: 10px;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+input[type="text"] {
+    flex: 1; /* Flex grow to fill space */
+    margin-right: 10px; /* Spacing between first name and last name */
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.agreement {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff3366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6699;
+}
