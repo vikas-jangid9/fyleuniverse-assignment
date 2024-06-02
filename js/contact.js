@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const formData = new FormData(contactForm);
 
-        fetch("https://getform.io/f/your-getform-endpoint", {
+        fetch("https://getform.io/f/zaxdeega", {
             method: "POST",
             body: formData,
         })
