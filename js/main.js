@@ -26,3 +26,16 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+function showImage(imageSrc, element) {
+    document.getElementById('project-image').src = imageSrc;
+    
+    // Remove 'active' class from all text blocks
+    var textBlocks = document.querySelectorAll('.text-block');
+    textBlocks.forEach(function(item) {
+        item.classList.remove('active');
+    });
+    
+    // Add 'active' class to the clicked text block
+    element.classList.add('active');
+}
