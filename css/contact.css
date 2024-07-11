@@ -1,0 +1,67 @@
+.contact-page {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    width: 40vw;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-page form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-page label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-page input, .contact-page textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.name-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"], input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #ccc; /* Underline style */
+    padding: 10px;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+input[type="text"] {
+    flex: 1; 
+    margin-right: 10px; 
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff3366;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6699;
+}
